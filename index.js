@@ -1,3 +1,4 @@
+//1
 /**
  * @param {string} word - The word to repeat.
  * @param {number} n - The number of times to repeat the word.
@@ -19,6 +20,7 @@ export function echo(word, n) {
   return result;
 }
 
+//2
 /**
  * @param {string} word - The word to repeat.
  * @param {number} n - The number of times to repeat the word.
@@ -43,6 +45,7 @@ export function echoWithSpace(word, n) {
   return result;
 }
 
+//3
 /**
  * @param {number} n - The number to stop at
  * @returns {number} The sum of all integers from 1 to n, inclusive.
@@ -63,6 +66,7 @@ export function sumTo(n) {
   return result;
 }
 
+//4
 /**
  * @param {number} a - The starting integer.
  * @param {number} z - The ending integer.
@@ -84,6 +88,7 @@ export function sumFromTo(a, z) {
   return result;
 }
 
+//5
 /**
  * Counts down from n to 1, inclusive, by logging each number to the console.
  * @param {number} n - The number to start counting down from.
