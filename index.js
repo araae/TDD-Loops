@@ -80,7 +80,7 @@ export function sumTo(n) {
  * sumFromTo(2, 2); // 2
  */
 export function sumFromTo(a, z) {
-  // add all numbers from a to z
+  //add all numbers from a to z
   let result = 0;
   for (let i = a; i <= z; i += 1) {
     result += i;
@@ -101,8 +101,12 @@ export function sumFromTo(a, z) {
  * countdown(5); // logs 5, 4, 3, 2, 1
  */
 export function countdown(n) {
-  // TODO
+  //countdown from n to 1
+  for (let i = n; i >= 1; i -= 1) {
+    console.log(i);
+  }
 }
+//i initially went with a while loop, but i think this is cleaner
 
 /**
  * @param {number} n - The ending number.
