@@ -32,7 +32,15 @@ export function echo(word, n) {
  * echoWithSpace("test", 1); // "test"
  */
 export function echoWithSpace(word, n) {
-  // TODO
+  //repeat word n times and separate it by spaces
+  let result = "";
+  for (let i = 0; i < n; i += 1) {
+    if (i > 0) {
+      result += " ";
+    }
+    result += word;
+  }
+  return result;
 }
 
 /**
