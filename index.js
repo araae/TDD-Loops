@@ -55,7 +55,12 @@ export function echoWithSpace(word, n) {
  * sumTo(100); // 5050
  */
 export function sumTo(n) {
-  // TODO
+  //add all numbers from 1 to n
+  let result = 0;
+  for (let i = 1; i <= n; i += 1) {
+    result += i;
+  }
+  return result;
 }
 
 /**
