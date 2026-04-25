@@ -108,6 +108,7 @@ export function countdown(n) {
 }
 //i initially went with a while loop, but i think this is cleaner
 
+//6
 /**
  * @param {number} n - The ending number.
  * @returns {number} The sum of all odd numbers from 1 to n, inclusive.
@@ -120,8 +121,16 @@ export function countdown(n) {
  * sumOddsToN(1); // 1
  */
 export function sumOddsToN(n) {
-  // TODO
+  //add all odd numbers from 1 to n
+  let result = 0;
+  for (let i = 1; i <= n; i += 1) {
+    if (i % 2 !== 0) {
+      result += i;
+    }
+  }
+  return result;
 }
+//still trying to figure out which style i like better, i need to learn the shorter ways to write it
 
 /**
  * A petri dish starts with a certain number of bacteria cells.
