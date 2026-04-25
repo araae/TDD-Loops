@@ -76,7 +76,12 @@ export function sumTo(n) {
  * sumFromTo(2, 2); // 2
  */
 export function sumFromTo(a, z) {
-  // TODO
+  // add all numbers from a to z
+  let result = 0;
+  for (let i = a; i <= z; i += 1) {
+    result += i;
+  }
+  return result;
 }
 
 /**
