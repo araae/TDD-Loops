@@ -132,6 +132,7 @@ export function sumOddsToN(n) {
 }
 //still trying to figure out which style i like better, i need to learn the shorter ways to write it
 
+//7
 /**
  * A petri dish starts with a certain number of bacteria cells.
  * That number doubles every 20 minutes.
@@ -149,9 +150,14 @@ export function sumOddsToN(n) {
  * getGrowthTime(5, 78); // 80
  */
 export function getGrowthTime(start, target) {
-  // TODO
+  //double the number of bacteria cells every 20 minutes
+  if (start >= target) {
+    return 0;
+  }
+  //having trouble with this one
 }
 
+//8
 /**
  * The amount of money in a savings account grows by a certain rate every year.
  *
