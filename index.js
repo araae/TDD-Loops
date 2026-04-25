@@ -11,7 +11,12 @@
  * echo("test", 1); // "test"
  */
 export function echo(word, n) {
-  // TODO
+  //repeat word n times
+  let result = "";
+  for (let i = 0; i < n; i += 1) {
+    result += word;
+  }
+  return result;
 }
 
 /**
