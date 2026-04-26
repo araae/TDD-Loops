@@ -151,11 +151,17 @@ export function sumOddsToN(n) {
  */
 export function getGrowthTime(start, target) {
   //double the number of bacteria cells every 20 minutes
-  if (start >= target) {
-    return 0;
+  if (start <= 0) return undefined;
+  if (start >= target) return 0;
+  let current = start;
+  let minutes = 0;
+  while (current < target) {
+    current *= 2;
+    minutes += 20;
   }
-  //having trouble with this one
+  return minutes;
 }
+//i looked it up but i understand it now
 
 //8
 /**
