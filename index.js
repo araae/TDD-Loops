@@ -194,6 +194,7 @@ export function getCompoundTime(start, rate, target) {
 }
 //totally undefined
 
+//9
 /**
  * An empty bucket sits some distance away from a water faucet.
  * You need to fill the bucket with water, but your only container
@@ -217,7 +218,20 @@ export function getCompoundTime(start, rate, target) {
  * moveWater(7, 3); // 1
  */
 export function moveWater(colander, bucket) {
-  // TODO
+  //keep making trips until the bucket is full, but less water for each trip
+  if (colander <= 0) return undefined;
+  if (bucket <= 0) return 0;
+  let trips = 0;
+  let water = 0;
+  let current = colander;
+  while (water < bucket) {
+    water += current;
+    trips += 1;
+    if (current > 1) {
+      current -= 1;
+    }
+  }
+  return trips;
 }
 
 /**
