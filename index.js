@@ -181,8 +181,18 @@ export function getGrowthTime(start, target) {
  * getCompoundTime(30000, 0.04, 50000); // 14
  */
 export function getCompoundTime(start, rate, target) {
-  // TODO
+  //grow the amount of money in the savings account by 5% every year until we reach the target
+  if (start <= 0 || rate <= 0) return undefined;
+  if (start >= target) return 0;
+  let current = start;
+  let years = 0;
+  while (current < target) {
+    current *= 1 + rate;
+    years += 1;
+  }
+  return years;
 }
+//totally undefined
 
 /**
  * An empty bucket sits some distance away from a water faucet.
