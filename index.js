@@ -34,7 +34,8 @@ export function echo(word, n) {
  * echoWithSpace("test", 1); // "test"
  */
 export function echoWithSpace(word, n) {
-  //repeat word n times and separate it by spaces
+  // repeat word n times separated by spaces
+  if (word === "") return ""; // add this!
   let result = "";
   for (let i = 0; i < n; i += 1) {
     if (i > 0) {
@@ -44,6 +45,7 @@ export function echoWithSpace(word, n) {
   }
   return result;
 }
+//i had to come back to this, it was causing one of the tests to fail
 
 //3
 /**
@@ -234,6 +236,7 @@ export function moveWater(colander, bucket) {
   return trips;
 }
 
+//10
 /**
  * This is a classic interview question! :)
  * Log numbers from 1 to n to the console.
@@ -251,5 +254,18 @@ export function moveWater(colander, bucket) {
  * fizzbuzz(15); // logs 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz
  */
 export function fizzbuzz(n) {
-  // TODO
+  //log numbers on the console, replace them according to the instructions
+  for (let i = 1; i <= n; i += 1) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("fizzbuzz");
+    } else if (i % 3 === 0) {
+      console.log("fizz");
+    } else if (i % 5 === 0) {
+      console.log("buzz");
+    } else {
+      console.log(i);
+    }
+  }
 }
+
+//i looked up a lot of these and asked for help, i think its because im not used to it yet haha, theyre simple but i have to study more i think
